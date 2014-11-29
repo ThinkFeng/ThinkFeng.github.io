@@ -78,40 +78,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <div class="container">
 			   <div class="header-section text-center">
 				  <h2><span> </span>ABOUT<span> </span></h2>
-				  </div>
-				 <span><p>Details determine success or failure. Inspiration is form thinking.</p></span>
-					 
-			  <div class="years">	 
-				<h4><b>2010</b></h4>
-				 <span><h4>An ignorant college students</h4></span>
-				 <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-			  </div> 
-				
-			  <div class="years">	 		
-				 <h4><b>2013</b></h4>
-				 <span><h4>Intern</h4></span>
+		   </div>
+				 <span>
+				 <h2>Details determine success or failure. </h2>
+				 <h2>Inspiration is form thinking.</h2>
+				 </span>
+				 <div class="years">	 		
+				 <h4><b>2010</b></h4>
+                 <h4><span>An ignorant college students</span></h4>
+                 <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                   lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
+                 <h4><b>2013</b></h4>
+			    <span>
+			    <h4> An intern in Impro</h4></span>
 				 <p><i>Worked in Impro, a company in Jiangyan, Jiangsu province，from August 5 to November 1 without pay. 
 					lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-			  </div> 
-					
-			   <div class="years">	 	
-				 <h4><b>2013</b></h4>
-				 <span><h4>Owner Alternative Labs</h4></span>
-				 <div class="labs">
-					 <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+				 <h4><b>2014</b></h4>
+                 <h4><span> An intern in Impro</span></h4>
+                 <p><i>Worked in Impro, a company in Jiangyan, Jiangsu province，from August 5 to November 1 without pay. 
+                   lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
+                 <h4><b>2013</b></h4>
+                 <h4><span>Working in ITRI-Robot</span></h4>
+                 <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
 						lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.
-						sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i></p>
-			     </div>
+				   sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i>			  </p>
 			  </div>
-				 <a class="arrow scroll" href="#skills"><span> </span></a>
-		  </div>
+		 </div>
 	  </div>
 	 <!------About Ends--------->
 	 
 	<!------SKILLS Starts--------->
 	  <div id="skills" class="skills">
-	  <div class="container">
+
+  <div class="container">
 	     <div class="skills-grids">
 			  <div class="skill-section text-center">
 				  <h2><span> </span>SKILLS<span> </span></h2>
@@ -122,28 +121,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-1"></div>									
-												 <h3>MySql</h3>	
-											 </div>								  
+												 <h3>SolidWorks</h3>	
+										  </div>								  
 										</div>
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-2"></div>									
-												 <h3>AJAX</h3>	
-											 </div>								  
+												 <h3>Micro Controller</h3>	
+										  </div>								  
 										</div>
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-3"></div>									
-												 <h3>PHP</h3>	
-											 </div>								  
+												 <h3>CorelVideo PS</h3>	
+										  </div>								  
 										</div>
-										<div class="col-md-3">	
+								  <div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-4"></div>									
-												 <h3>JAVASCRIPT</h3>	
+												 <h3>Matlab</h3>	
 											 </div>								  
 										</div>
-										<div class="clearfix"> </div>
+                               	  <div class="clearfix"> </div>
 								  </div>
 						   </div>
 					  </div>
@@ -153,16 +152,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									var colors = [
 											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
 										];
+					<!------------------关于百分比的图形修改---------------------------->
+									var skillnum = [
+											[5.2], [6], [8], [7]
+										];
+					<!------------------关于百分比的图形修改----------------------------->
 									for (var i = 1; i <= 5; i++) {
 										var child = document.getElementById('circles-' + i),
-											percentage = 50 + (i * 10);
+											
+											percentage = skillnum[i-1] * 10;
 											
 										Circles.create({
 											id:         child.id,
 											percentage: percentage,
 											radius:     80,
 											width:      15,
-											number:   	percentage / 10,
+											number:   	percentage ,
 											text:       '%',
 											colors:     colors[i - 1]
 										});
@@ -213,12 +218,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
   <!------FOOTER Starts----------->
   <div  id="contact" class="footer">
-      <div class="container">
+<div class="container">
 	  
 		   <div class="contact-section text-center">
 			  <h2><span> </span>CONTACT<span> </span></h2>
 		  </div>
-		 <div class="row">
+	    <div class="row">
 		 
 			 <div class="col-md-6">
 				  <div class="footer-left">
@@ -249,13 +254,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  </div>
 				  <div class="clear"></div>
 				  <p class="copy-right">CopyRight by <a href="http://504759860.qzone.qq.com/">ThinkFeng</a></p>
-			  </div>
-		  </div>
+			</div>
 	 </div>
-	 <a class="up scroll" href="#top-top"><span> </span></a>
-	  
- </div>
- 
+  <a class="up scroll" href="#top-top"><span> </span></a>
  </body>
  </html>
  
